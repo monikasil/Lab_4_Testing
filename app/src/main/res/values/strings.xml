@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TextCounterSample</string>
     <string name="btn_calculate_caption">Calculate</string>
+    <string name="btn_calculate_caption2">Second button</string>
     <string name="char_selection">Char</string>
     <string-array name="planets_array">
         <item>Mercury</item>

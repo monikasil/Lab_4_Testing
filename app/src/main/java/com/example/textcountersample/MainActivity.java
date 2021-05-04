@@ -16,6 +16,8 @@ import static com.example.textcountersample.utils.ElementsCalculator.getCharsCou
 public class MainActivity extends AppCompatActivity {
 
     Spinner ddSelection;
+    EditText edUserInput;
+    TextView tvOutput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         this.ddSelection = (Spinner) findViewById(R.id.ddSelection);
+        this.edUserInput = findViewById(R.id.edUserInput);
+        this.tvOutput = findViewById(R.id.tvOutput);
 
         /*ArrayList<String> selectionOptionsList = new ArrayList<>();
         selectionOptionsList.add("Words");
@@ -53,5 +57,17 @@ public class MainActivity extends AppCompatActivity {
             int count = getCharsCount(userInputText);
             tvOutput.setText(String.valueOf(count));
         }
+    }
+
+    public void btnCalculateOnClick2(View view) {
+        int count = getCharsCount("tekstas2");
+        tvOutput.setText(String.valueOf(count));
+    }
+
+    public static int getCharsCount(String inputText){
+        if(inputText != null){
+            return inputText.length();
+        }
+        return 0;
     }
 }
