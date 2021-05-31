@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TextCounterSample</string>
+    <string name="app_name">Lab 4 - Testing</string>
     <string name="btn_calculate_caption">Calculate</string>
     <string name="char_selection">Characters</string>
     <string name="word_selection">Words</string>
